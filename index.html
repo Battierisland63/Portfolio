@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Spears | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="card-container">
+    <div class="portfolio-card">
+      
+      <div class="left-col">
+        <header class="header">
+          <h1 class="name">Dylan Spears</h1>
+          <p class="subtitle">Student Developer &amp; Technology Enthusiast</p>
+          <p class="location">Cherokee High School (Class of '27) • Canton, GA</p>
+        </header>
+
+        <p class="intro">
+          Motivated high school student with a passion for software development, cybersecurity, network fundamentals, and hands-on computer hardware.
+        </p>
+
+        <div class="resume-box">
+          <span class="label">Resume:</span>
+          <div class="button-group">
+            <a href="Dylan%20Spears%20resume.pdf" target="_blank" class="btn btn-secondary">View PDF</a>
+            <a href="Dylan%20Spears%20resume.pdf" download="Dylan_Spears_Resume.pdf" class="btn btn-primary">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="contact-section">
+          <span class="label">Contact &amp; Links:</span>
+          <div class="contact-links">
+            <a href="mailto:djspears11@gmail.com">djspears11@gmail.com</a>
+            <span class="dot">•</span>
+            <span>(770) 970-3302</span>
+            <span class="dot">•</span>
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="right-col">
+        
+        <nav class="tab-menu" aria-label="Sections">
+          <button class="menu-btn active" data-tab="projects">Projects</button>
+          <button class="menu-btn" data-tab="skills">Skills</button>
+          <button class="menu-btn" data-tab="education">Education</button>
+          <button class="menu-btn" data-tab="activities">Activities</button>
+        </nav>
+
+        <div class="tab-content">
+          
+          <div id="tab-projects" class="tab-pane active">
+            <ul class="project-list">
+              <li>
+                <div class="project-title">
+                  <strong>Custom Gaming PC</strong>
+                  <span class="tag">Hardware</span>
+                </div>
+                <p>Designed, assembled, and maintained custom desktop PC with hands-on BIOS setup, component matching, and cooling optimization.</p>
+              </li>
+              <li>
+                <div class="project-title">
+                  <strong>Web &amp; Scripts</strong>
+                  <span class="tag">Web &amp; Python</span>
+                </div>
+                <p>Created responsive web layouts and automation utility scripts using HTML, CSS, JavaScript, and Python.</p>
+              </li>
+              <li>
+                <div class="project-title">
+                  <strong>Cybersecurity Labs</strong>
+                  <span class="tag">Security</span>
+                </div>
+                <p>Practiced packet analysis with Wireshark, basic firewall configuration, and network troubleshooting in isolated lab environments.</p>
+              </li>
+              <li>
+                <div class="project-title">
+                  <strong>AP CSP Create Task</strong>
+                  <span class="tag">Algorithms</span>
+                </div>
+                <p>Programmed an interactive project demonstrating data abstraction, functions, and algorithm efficiency for the College Board AP exam.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div id="tab-skills" class="tab-pane">
+            <div class="skills-grid">
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Python</div>
+              <div class="skill-item">C++</div>
+              <div class="skill-item">HTML / CSS</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">PC Building</div>
+              <div class="skill-item">Hardware Troubleshooting</div>
+              <div class="skill-item">Network Fundamentals</div>
+              <div class="skill-item">Cybersecurity Basics</div>
+              <div class="skill-item">Mechanical Repairs</div>
+            </div>
+          </div>
+
+          <div id="tab-education" class="tab-pane">
+            <div class="edu-card">
+              <div class="edu-head">
+                <strong>Cherokee High School</strong>
+                <span class="badge">Class of 2027</span>
+              </div>
+              <p class="edu-sub">Canton, Georgia</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-head">
+                <strong>AP Computer Science A</strong>
+                <span class="badge">Currently Enrolled</span>
+              </div>
+              <p class="edu-sub">College Board AP Course — Java Programming &amp; Data Structures</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-head">
+                <strong>AP Computer Science Principles</strong>
+                <span class="badge">Score: 4</span>
+              </div>
+              <p class="edu-sub">College Board Advanced Placement Examination</p>
+            </div>
+
+            <div class="edu-card">
+              <strong>Key Academic Coursework:</strong>
+              <p class="edu-sub">AP Computer Science A • AP Computer Science Principles • Honors Algebra • Spanish II • Multicultural Literature</p>
+            </div>
+          </div>
+
+          <div id="tab-activities" class="tab-pane">
+            <ul class="activity-list">
+              <li>
+                <strong>Lacrosse:</strong> Student athlete on the Cherokee High School lacrosse team.
+              </li>
+              <li>
+                <strong>Dirt Biking &amp; Mechanics:</strong> Hands-on experience with small engine maintenance, mechanical tuning, and troubleshooting.
+              </li>
+              <li>
+                <strong>Independent Projects:</strong> Continuously building and experimenting with personal coding, digital systems, and technology tools.
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <footer class="card-footer">
+          <p>&copy; <span id="year"></span> Dylan Spears</p>
+        </footer>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
